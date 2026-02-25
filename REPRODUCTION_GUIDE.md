@@ -250,7 +250,7 @@ Reference the screenshots in `screenshots/` for exact visual appearance at each 
 **Appearance:** Full-width card (max 1440px, 16px radius). Background is `hero-video.mp4` autoplaying, looped, muted, with reduced brightness (~80%). Tall section — roughly 400-500px of vertical space on desktop.
 
 **Content (overlaid, left-aligned):**
-- **Heading:** "Showcase your products in action and outline their benefits." in white, ~56px desktop. Word-by-word blur/fade reveal animation on scroll.
+- **Heading:** " " in white, ~56px desktop. Word-by-word blur/fade reveal animation on scroll.
 
 **Decorative:** A purple (brand-500) circle (~64px) in the bottom-right corner with a rotated white arrow icon.
 

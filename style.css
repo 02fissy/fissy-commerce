@@ -1,0 +1,112 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('assets/fonts/inter-400-normal.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('assets/fonts/inter-500-normal.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('assets/fonts/inter-600-normal.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('assets/fonts/inter-700-normal.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('assets/fonts/inter-900-normal.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('assets/fonts/inter-400-italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('assets/fonts/inter-500-italic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('assets/fonts/inter-700-italic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('assets/fonts/inter-900-italic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-mobile: 390px;
+  --breakpoint-tablet: 810px;
+  --breakpoint-desktop: 1440px;
+
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --color-brand-50: #F9F6FE;
+  --color-brand-100: #EDE4FC;
+  --color-brand-150: #E5D9FB;
+  --color-brand-200: #D2BBF7;
+  --color-brand-300: #B690F0;
+  --color-brand-400: #9B65E7;
+  --color-brand-500: #8345D8;
+  --color-brand-600: #6F33BD;
+  --tracking-1: 0.06em;
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  --animate-marquee: marquee 30s linear infinite;
+}
+@utility nav-link {
+  @apply px-4 py-2 rounded-md transition-colors hover:bg-[#E5D9FB];
+}
+@layer utilities{
+    .clip-stepped-curve {
+    clip-path: path("M 16,50 L 70,50 A 16,16,0,0,0 80,40 L 80,20 A 16,16,0,0,1 90,0 L 1000,0 L 1010,10 A 16,16,0,0,0 1010,200 L 1000,220 L 10,220 A 16,16,0,0,1 0,200 L 0,60 A 16,16,0,0,1 16,50 Z");
+  }
+  .clip-curve {
+    clip-path: path("M 16,50 L 70,50 A 16,16,0,0,0 80,40 L 80,20 A 16,16,0,0,1 90,0 L 1000,0 L 1010,10 A 16,16,0,0,0 1010,400 L 1000,420 L 10,420 A 16,16,0,0,1 0,400 L 0,60 A 16,16,0,0,1 16,50 Z");
+  }
+  .clip-bottom-curve {
+     clip-path: path("M 0,16 L 16,0 L 1000,0 L 1000,16 L 1010,330 L 990,320 L 980,310 L 970,280 L 970,390 L 960,400 L 10,400 L 0,390 L 0,16 L 16,0 L 0,16 Z");
+}
+.reveal-hidden {
+    @apply opacity-0 translate-y-12 blur-[2px] pointer-events-none;
+  }
+  
+  .reveal-visible {
+    @apply opacity-100 translate-y-0 blur-0 pointer-events-auto transition-all duration-1000 ease-out;
+  }
+}
