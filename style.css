@@ -102,5 +102,11 @@
   .clip-bottom-curve {
      clip-path: path("M 0,16 L 16,0 L 1000,0 L 1000,16 L 1010,330 L 990,320 L 980,310 L 970,280 L 970,390 L 960,400 L 10,400 L 0,390 L 0,16 L 16,0 L 0,16 Z");
 }
-
+.reveal-hidden {
+    @apply opacity-0 translate-y-[48px] pointer-events-none transition-all duration-1000 ease-out;
+  }
+  
+  .reveal-visible {
+    @apply opacity-100 translate-y-0 pointer-events-auto;
+  }
 }
