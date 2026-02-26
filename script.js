@@ -3,7 +3,6 @@ document.addEventListener('alpine:init', () => {
         showModal: false,
         hasTriggered: false,
 
-        revealedSections: {},
 
         init() {
             window.addEventListener('scroll', () => {
@@ -24,9 +23,6 @@ document.addEventListener('alpine:init', () => {
             }
         },
 
-        reveal(sectionId) {
-            this.revealedSections[sectionId] = true;
-        },
         closeModal() {
             this.showModal = false;
         }
